@@ -2,10 +2,13 @@
     font-family:"Bitcount Ink";
     font-size:2.5em;
     text-align:center;
+    width:90%;
 }
 #index-1{
     background-color: darkorange;
     height:100%;
+    overflow-y:scroll;
+    overflow-x:hidden;
 }
 #halloween-bg{
     width:90%;
@@ -19,4 +22,99 @@
     left:5%;
     margin-left:0px;
     margin-right:0px;
+    border-radius:40px;
+}
+.img-div-img{
+    width:400px;
+}
+li{
+    font-family:cursive;
+}
+p{
+    font-family:cursive;
+}
+#abovedogs{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+#halloween-bg-2{
+    width:90%;
+    height:70%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    background-color:orangered;
+    position:fixed;
+    left:5%;
+    border-radius:40px;
+    overflow:scroll;
+}
+#halloween-button{
+    margin-top:15px;
+    padding:20px;
+    border-radius:10px;
+    background-color:green;
+    color:white;
+    border-color:green;
+    margin-bottom:15px;
+    border-style:hidden;
+}
+
+p:hover{
+    color:red;
+}
+
+#halloween-bg-2:hover{
+    background-color:green
+}
+
+#dual-img-div{
+    flex-direction:row; 
+    margin-top:20%;
+    justify-content:space-evenly;
+}
+
+@media (max-width:1100px){
+    #abovedogs{
+        position:absolute;
+        width:96%;
+        height:150%;
+        top:0.000001%;
+        
+    }
+    #halloween-bg{
+        width:96%;
+        position:absolute;
+        left:2%;
+        height:70%;
+        display:flex;
+        align-items:center;
+        justify-content:space-evenly;
+        overflow-y:scroll;
+        overflow-x:hidden;
+    }
+    #halloween-bg-2{
+        width:96%;
+        position:absolute;
+        left:2%;
+        height:70%;
+        display:flex;
+        align-items:center;
+        justify-content:space-evenly;
+        overflow-y:scroll;
+        overflow-x:hidden;
+    }
+    #dual-img-div{
+        flex-direction:column;
+        position:absolute;
+        width:96%;
+        height:50%;
+        z-index:2;
+        top:150%;
+    }
+    .img-div-img{
+        width:100%;
+    }
 }

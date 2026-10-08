@@ -6,16 +6,31 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bitcount+Ink:wght@100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Edu+QLD+Hand:wght@400..700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css"/>
         <title>Happy Halloweeeeeeeeeeeeeeeeeeeeeeeeen!</title>
     </head>
     <body id="index-1">
-        <h2 class="title-bg">HAPPY HALLOWEEEEEEEEEEEEEEEEEEEEEEEEEN!</h2>
+        <h2 class="title-bg">HAPPY HALLOWEEN!</h2>
         <br>
         <div id="halloween-bg">
             <h1>Happy Halloween!!!</h1>
-            <br>
-            <img src="https://lede-admin.dailydot.com/wp-content/uploads/sites/69/2024/10/dancing-pumpkin-man.gif?w=850&quality=75" width="400" height="50%"/>
+            <img src="https://lede-admin.dailydot.com/wp-content/uploads/sites/69/2024/10/dancing-pumpkin-man.gif?w=850&quality=75" width="400" height="50%" style="border-radius:30px;"/>
+            <p>Play me! I am fun! You have to scroll down anyway!</p>
+            <a href="index2.html"><button id="halloween-button"><span style="font-size:15px; font-family:'Edu QLD Hand','cursive';">Escape this page!!!</span></button></a>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.4/dist/confetti.browser.min.js"></script>
+        <script>
+                
+                var count = 0;
+                const interval = setInterval(()=>{
+                    confetti({
+                    particleCount:3000,
+                    spread:1000,
+                    origin:{y:0.50},
+                    })
+                    count++;
+                }, 2000)
+        </script>
     </body>
 </html>

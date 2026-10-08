@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bitcount+Ink:wght@100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Edu+QLD+Hand:wght@400..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css"/>
+        <title>Happy Halloweeeeeeeeeeeeeeeeeeeeeeeeen!</title>
+    </head>
+    <body id="index-1">
+        <h2 class="title-bg">HAPPY HALLOWEEN!</h2>
+        <br>
+        <div id="halloween-bg-2">
+            <div style="" id="dual-img-div">
+            <img src="pic1.jpg" class="img-div-img"height="100%" style="border-radius:30px;"/>
+            <img src="pic2.jpg" class="img-div-img"height="100%" style="border-radius:30px;"/>
+            </div>
+            <div id="abovedogs">
+            <a href="index.html"><button id="halloween-button"><span style="font-size:15px; font-family:'Edu QLD Hand','cursive';">Too annoying? Go back!</span></button></a>
+            <audio controls style="display:block; width:50%;" src="dragon-studio-scary-halloween-intro-410548.mp3"></audio>
+            <h3>A Halloween Message</h3>
+            <p>Happy Halloween! I hope this demonstration wasn't too scary. If not, please proceed with the card reading.</p>
+            <p>My favorite Halloween candies are:</p>
+                <ul>
+                    <li>KitKats</li>
+                    <li>Almond Joys</li>
+                    <li>Dark Chocolate Hersheys</li>
+                </ul>
+            <p>Sincerely, Kian</p>
+
+            <p>Watch a silly Halloween song!</p>
+            <iframe src="https://www.youtube-nocookie.com/embed/61t22VGByok?playlist=61t22VGByok&autoplay=1&iv_load_policy=3&loop=1&start=" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.4/dist/confetti.browser.min.js"></script>
+        <script>
+                
+                var count = 0;
+                const interval = setInterval(()=>{
+                    confetti({
+                    particleCount:3000,
+                    spread:1000,
+                    origin:{y:0.50},
+                    })
+                    count++;
+                }, 5000)
+        </script>
+    </body>
+</html>
